@@ -1,0 +1,7 @@
+numpy>=2.0
+scipy>=1.13
+matplotlib>=3.8
+cvxpy>=1.5
+# MILP solver: HIGHS ships with cvxpy/scipy. For larger instances install a
+# licensed solver and pass solver="GUROBI" or "MOSEK" to solve_milp():
+#   pip install gurobipy   # or: pip install mosek

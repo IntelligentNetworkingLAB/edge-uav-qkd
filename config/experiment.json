@@ -1,0 +1,26 @@
+{
+  "description": "Two ground-station pairs far apart need secret keys. A UAV acts as a mobile trusted relay for quantum key distribution (QKD) over free-space optical links, while an adversary near one pair raises the capture risk. A separate study asks how an edge link should hop channels against jammers of increasing adaptivity.",
+  "coverage": {
+    "cluster_sep_m": 8000.0,
+    "uav_speed_mps": 3000.0,
+    "threat_intensity": 1.0
+  },
+  "presets": {
+    "quick": {
+      "grid_n": 7,
+      "horizon": 14,
+      "demands_mbit": [4, 6, 8],
+      "antijam_channels": 8,
+      "antijam_slots": 2000,
+      "antijam_seeds": 5
+    },
+    "full": {
+      "grid_n": 9,
+      "horizon": 18,
+      "demands_mbit": [4, 6, 8, 10, 12, 14],
+      "antijam_channels": 8,
+      "antijam_slots": 4000,
+      "antijam_seeds": 20
+    }
+  }
+}
